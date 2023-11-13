@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.p-unset {
+  position: unset;
+}
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.border {
+  border: 1px solid #ccc;
+}
+
+/* 배경처리 : 찌그러지지않게 처리하기
+  이미지 요소 검사 후 width값 100px주고 height auto를 주면 heigt %를 구할 수 있다.
+*/
+#mainBanner .swiper-slide {
+  height: 0;
+  padding-top: 43%;
+  /* width 100% 조건이 내장되어야한다. */
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.bg0 {
+  background-image: url(https://www.cj.co.kr/cj_files/main/visual/202309/1693899949661_0.jpg);
+}
+
+.bg1 {
+  background-image: url(https://www.cj.co.kr/cj_files/main/visual/201901/1546929273425_0.jpg);
+}
+
+.bg2 {
+  background-image: url(https://www.cj.co.kr/cj_files/main/visual/201901/1546928897582_0.jpg);
+}
+
+.bg3 {
+  background-image: url(https://www.cj.co.kr/cj_files/main/visual/202308/1692251347164_0.jpg);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.btns button {
+  color: white;
+}
+
+#mainBanner .swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+.btns {
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  align-items: center;
+}
+
+.btns button {
+  background-color: inherit;
+  border-radius: 50%;
+  padding: 0.2rem 0.3rem;
+  cursor: pointer;
+}
